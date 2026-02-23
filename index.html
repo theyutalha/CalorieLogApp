@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CalorieLog: Calorie, Macro & Water Tracker</title>
+  <meta name="description" content="Track calories, protein, carbs, fat, and water in one place. Log meals fast, scan barcodes, and get AI nutrition insights with CalorieLog.">
+  <meta name="keywords" content="calorie tracker,macro tracker,protein tracker,water tracker,nutrition,diet,meal log,barcode scanner,health,fitness">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:title" content="CalorieLog: Calorie, Macro & Water Tracker">
+  <meta property="og:description" content="Meal logging, macro tracking, water reminders, barcode scan, weekly reports, and AI nutrition tips.">
+  <meta property="og:image" content="appIcon.png">
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:title" content="CalorieLog: Calorie, Macro & Water Tracker">
+  <meta property="twitter:description" content="Track meals, calories, macros, water, and progress with AI-powered insights.">
+  <meta property="twitter:image" content="appIcon.png">
+  <link rel="icon" type="image/png" href="appIcon.png">
+  <style>
+    :root{--bg:#f3f4f8;--paper:#fff;--ink:#101214;--muted:#5e6472;--line:#e7e9ef;--accent:#ff3b30;--radius-lg:28px;--radius-md:18px}
+    *{box-sizing:border-box}body{margin:0;color:var(--ink);background:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;line-height:1.5}
+    .container{width:min(1120px,calc(100% - 40px));margin:0 auto}.topbar{position:sticky;top:0;background:rgba(243,244,248,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(16,18,20,.08);z-index:20}
+    .topbar-inner{min-height:70px;display:flex;justify-content:space-between;align-items:center;gap:12px}.brand{display:flex;align-items:center;gap:12px;font-weight:800;text-decoration:none;color:var(--ink)}
+    .brand img{width:40px;height:40px;border-radius:12px}.cta{display:inline-flex;align-items:center;justify-content:center;padding:0 20px;min-height:46px;border-radius:999px;background:var(--accent);color:#fff;text-decoration:none;font-weight:700}
+    .hero{padding:56px 0 28px}.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:24px;align-items:center}.pill{display:inline-block;padding:8px 12px;border-radius:999px;background:#fff;border:1px solid var(--line);font-weight:700;font-size:.85rem}
+    h1{font-size:clamp(2rem,5vw,3.7rem);line-height:1.05;letter-spacing:-.03em;margin:14px 0}.lead{color:var(--muted);font-size:clamp(1rem,2vw,1.2rem);margin:0 0 18px}
+    .hero-shot{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:12px}.hero-shot img{width:100%;border-radius:18px;display:block}
+    section{padding:18px 0 30px}.section-title{font-size:clamp(1.5rem,3.6vw,2.4rem);margin:0 0 10px;letter-spacing:-.02em}.section-sub{margin:0 0 20px;color:var(--muted)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .card{background:var(--paper);border:1px solid var(--line);border-radius:var(--radius-md);padding:18px}.card h3{margin:0 0 8px}.card p{margin:0;color:#434a58}
+    .shots{display:grid;grid-template-columns:repeat(5,minmax(180px,1fr));gap:12px;overflow-x:auto;padding-bottom:8px}.shot{background:#fff;border:1px solid var(--line);border-radius:16px;padding:8px;min-width:180px}.shot img{width:100%;border-radius:12px;display:block}.shot p{margin:8px 2px 0;font-size:.82rem;color:#4a5160;font-weight:600}
+    .premium{background:#121826;color:#eef2ff;border-radius:24px;padding:24px}.premium p{color:#cfd6ea}.premium table{width:100%;border-collapse:collapse}.premium th,.premium td{padding:10px;border-bottom:1px solid rgba(255,255,255,.12);text-align:left}.premium tr:last-child td{border-bottom:0}
+    .footer{padding:34px 0 44px;color:var(--muted);text-align:center}.footer a{color:#4d5568;text-decoration:none;font-weight:700;margin:0 8px}
+    @media (max-width:980px){.hero-grid{grid-template-columns:1fr}.grid-3,.grid-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="brand" href="#top"><img src="appIcon.png" alt="App icon"><span>CalorieLog</span></a>
+      <a class="cta" href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="pill">Meal Logging, Macro Tracking, and Diet AI</span>
+          <h1>Eat Smarter. Track Better. Stay Consistent.</h1>
+          <p class="lead">Log breakfast, lunch, dinner, and snacks in seconds. Track calories, protein, carbs, fat, and water with clear daily and weekly insights.</p>
+          <a class="cta" href="https://apps.apple.com" target="_blank" rel="noopener noreferrer">Download on the App Store</a>
+        </div>
+        <div class="hero-shot"><img src="01-home.png" alt="Home screen"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Why CalorieLog?</h2>
+        <p class="section-sub">Not just calorie counting. Meal-level tracking, smart targets, water reminders, and AI suggestions keep your nutrition plan on track.</p>
+        <div class="grid-3">
+          <article class="card"><h3>Quick Meal Logging</h3><p>Track breakfast, lunch, dinner, and snacks with favorites and recent foods for faster input.</p></article>
+          <article class="card"><h3>Macro + Water Tracking</h3><p>Monitor calories, protein, carbs, fat, and daily water intake with practical cup presets.</p></article>
+          <article class="card"><h3>Diet AI Insights</h3><p>Get personalized nutrition suggestions based on your logged meals and daily balance.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">Core Features</h2>
+        <div class="grid-2">
+          <article class="card"><h3>Barcode Scanning</h3><p>Add packaged foods quickly by scanning barcodes and logging portions instantly.</p></article>
+          <article class="card"><h3>Daily & Weekly Reports</h3><p>View calorie trends, macro distribution, and meal breakdowns in a clear format.</p></article>
+          <article class="card"><h3>Goal Wizard</h3><p>Set calorie and macro targets with guided recommendations for your routine.</p></article>
+          <article class="card"><h3>Multi-language Support</h3><p>Use the app in EN, TR, ES, DE, or FR. Optional sign in with Apple is supported.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <h2 class="section-title">App Screenshots</h2>
+        <div class="shots">
+          <article class="shot"><img src="01-home.png" alt="Home"><p>Dashboard</p></article>
+          <article class="shot"><img src="02-programs.png" alt="Meals"><p>Meal logging</p></article>
+          <article class="shot"><img src="03-progress-chart.png" alt="Macros"><p>Macro overview</p></article>
+          <article class="shot"><img src="04-progress-stats.png" alt="Stats"><p>Daily stats</p></article>
+          <article class="shot"><img src="05-body-fat.png" alt="Water"><p>Water tracking</p></article>
+          <article class="shot"><img src="06-history-calendar.png" alt="History"><p>Nutrition history</p></article>
+          <article class="shot"><img src="07-history-list.png" alt="Reports"><p>Weekly reports</p></article>
+          <article class="shot"><img src="08-workout.png" alt="Barcode"><p>Barcode scan</p></article>
+          <article class="shot"><img src="09-badges-consistency.png" alt="AI"><p>Diet AI tips</p></article>
+          <article class="shot"><img src="10-badges-strength.png" alt="Goals"><p>Goal wizard</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="premium">
+      <div class="container">
+        <div class="premium">
+          <h2>Unlock More with Premium</h2>
+          <p>The free plan includes limited access with 3 usage rights on selected features. Upgrade for full tracking and Diet AI recommendations.</p>
+          <table>
+            <thead><tr><th>Feature</th><th>Free</th><th>Premium</th></tr></thead>
+            <tbody>
+              <tr><td>Meal entries</td><td>Limited</td><td>Unlimited</td></tr>
+              <tr><td>Diet AI</td><td>Locked</td><td>Unlocked</td></tr>
+              <tr><td>Water reminders</td><td>Limited</td><td>Unlimited</td></tr>
+              <tr><td>Advanced reports</td><td>Limited</td><td>Full access</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Built for Better Nutrition.</p>
+      <p><a href="privacy.html">Privacy Policy</a><a href="#">Terms of Use</a><a href="mailto:talhabekaroglu@gmail.com">Contact</a></p>
+      <p>&copy; 2026 Talha Bekaroğlu. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
